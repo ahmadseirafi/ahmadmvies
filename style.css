@@ -181,7 +181,7 @@ ul.images li {
 
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 500px) {
     .logo {
         font-size: 18px;
     }
