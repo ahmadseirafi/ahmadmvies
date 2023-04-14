@@ -51,6 +51,20 @@ nav ul li a:hover {
 }
 
 
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 400px;
+}
+
+.search-icon {
+    font-size: 30px;
+    color: #f9004d;
+    margin: 2%;
+}
+
+
 .btn {
     background-color: #f9004d;
     color: white;
@@ -116,8 +130,8 @@ ul.images {
 ul.images li {
     list-style-type: none;
     flex: 0 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 #the-dark-knight {
@@ -144,44 +158,49 @@ ul.images li {
 }
 
 .upcoming {
-    height: 30%;
+    height: 40vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 2px dotted #f9004d;
     border-radius: 16px;
-    margin: 2%;
+    margin: 4% 8%;
     padding: 2%;
 }
 
 #dune {
-    background: url(https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2022/11/17141326/2.-Rory_Kurtz_Dune_VARIANT.jpg);
-    background-size: cover;
-    width: 200px;
-    height: 300px;
-    margin-bottom: 4%;
+    height: 100%;
+}
+
+
+#dune img {
+    height: 100%;
 }
 
 #open {
-    background: url(https://assets-prd.ignimgs.com/2022/07/21/oppenheimer-poster-1658411601593.jpeg);
-    background-size: cover;
-    width: 200px;
-    height: 300px;
-    margin-bottom: 4%;
+    height: 100%;
+
+}
+
+#open img {
+    height: 100%;
+
 }
 
 #wick {
-    background: url(https://image.tmdb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg);
-    background-size: cover;
-    width: 200px;
-    height: 300px;
-    margin-bottom: 4%;
+    height: 100%;
+
+}
+
+#wick img {
+    height: 100%;
+
 }
 
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 360px) {
     .logo {
         font-size: 18px;
     }
@@ -217,24 +236,58 @@ ul.images li {
         height: 40vh;
     }
 
+
     #dune {
-        width: 32%;
-        height: 23vh;
+        height: 100%;
+        width: 30%;
+
+    }
+
+
+    #dune img {
+        height: 100%;
+        width: 100%;
+
     }
 
     #open {
-        width: 32%;
-        height: 23vh;
+        height: 100%;
+        width: 30%;
+
+
+    }
+
+    #open img {
+        height: 100%;
+        width: 100%;
+
     }
 
     #wick {
-        width: 32%;
-        height: 23vh;
+        height: 100%;
+        width: 30%;
+
+
+    }
+
+    #wick img {
+        height: 100%;
+        width: 100%;
+
+
     }
 
 
-    nav{
+    nav {
         justify-content: center;
         align-items: center;
+    }
+
+    .search {
+        flex: 0 0 100px;
+    }
+
+    .upcoming {
+        height: 30vh;
     }
 }

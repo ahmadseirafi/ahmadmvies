@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="search.css">
+    <title>search</title>
+</head>
+
+<body>
+    <h2 class="logo">
+        Ahmad<span> Movies</span>
+    </h2>
+    <div class="container">
+        <div class="search-form">
+            <h1>Search For <Span>Movies</Span></h1>
+            <div class="search-field">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Movie Name" id="input-box">
+            </div>
+            <Button class="btn" onclick="search()">Search</Button>
+        </div>
+    </div>
+    <div id="pop-header">
+        <img src="https://cdn-icons-png.flaticon.com/512/2798/2798007.png" id="popcorn">
+        <p id="qoute">Home Of Movies</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/4221/4221419.png" id="popcorn">
+
+    </div>
+    <div class="cover">
+        <button class="left-btn" onclick="leftScroll()">
+            <i class="left fa-solid fa-arrow-left"></i> </button>
+        <div class="scroll-images">
+            <div class="child">
+                <img class="child-img" src="https://wallpaperaccess.com/full/3658604.jpg" alt="image" />
+            </div>
+            <div class="child">
+                <img class="child-img"
+                    src="https://i.etsystatic.com/20335141/r/il/767458/2920989359/il_500x500.2920989359_b3d7.jpg"
+                    alt="image" />
+            </div>
+            <div class="child">
+                <img class="child-img"
+                    src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1556582040238-PTQ8EP4WMQH73IU2G7K7/image-asset.jpeg"
+                    alt="image" />
+            </div>
+            <div class="child">
+                <img class="child-img"
+                    src="https://e0.pxfuel.com/wallpapers/452/6/desktop-wallpaper-poster-movie-film-movies-posters-bollywood-movie-collage.jpg"
+                    alt="image" />
+            </div>
+            <div class="child">
+                <img class="child-img"
+                    src="https://c4.wallpaperflare.com/wallpaper/443/241/271/art-collage-digital-fan-wallpaper-preview.jpg"
+                    alt="image" />
+            </div>
+            <div class="child">
+                <img class="child-img"
+                    src="https://w0.peakpx.com/wallpaper/276/724/HD-wallpaper-2022-the-batman-movie-the-batman-batman-superheroes-movies-2022-movies.jpg"
+                    alt="image" />
+            </div>
+        </div>
+        <button class="right-btn" onclick="rightScroll()">
+            <i class="right fa-solid fa-arrow-right"></i>
+        </button>>
+    </div>
+
+</body>
+
+<script>
+    function leftScroll() {
+        const left = document.querySelector(".scroll-images");
+        left.scrollBy(-200, 0);
+    }
+    function rightScroll() {
+        console.log("hi");
+        const right = document.querySelector(".scroll-images");
+        right.scrollBy(200, 0);
+    }
+
+    function search() {
+
+        let inputBox = document.getElementById("input-box");
+        let searchValue = inputBox.value;
+        url = 'search-result.html?name=' + encodeURIComponent(searchValue);
+        document.location.href = url;
+    }
+
+</script>
+
+</html>
