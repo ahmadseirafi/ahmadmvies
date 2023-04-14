@@ -177,7 +177,7 @@ button {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .logo {
         font-size: 18px;
     }
